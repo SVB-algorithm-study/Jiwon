@@ -26,6 +26,14 @@ You must write an algorithm that runs in `O(n)` time.
   
   - After checking condition, 1) update `prev` using `curr` 2) increase `curr` to check the next element
 
+> Time Complexity: O(nlogn) for `sort()` function
+
+## ✨ How to solve in TC `O(n)`?
+- Important feature of the **start value for the sequence**: ***has no left neighbor***
+- How to solve: Figuring out which numbers don't have a left neighbor using `set()`
+  > `set()` is implemented as a hash table, so lookup/insert/delete function are done in `O(1)` 
+- Iterating the array and create a sequence if it is the start of a sequence(=if it doesn't have a left neighbor)
+
 
 ## 💡 One line notes for solution
 recursive: foreach num, get subseq with num and without num, only include num if prev was less, cache solution of each; dp=subseq length which must end with each num, curr num must be after a prev dp or by itself;
