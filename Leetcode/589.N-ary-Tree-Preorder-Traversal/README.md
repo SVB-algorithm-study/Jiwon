@@ -11,4 +11,5 @@ Nary-Tree input serialization is represented in their level order traversal. Eac
 
 ## 🤔 How to solve the problem
 - Preorder Traverse: ***root => left => right***
-- Use **deque** for traversing the **children Nodes.**
+- `root.children` is a list of children Nodes
+  - Use **deque** for traversing the **children Nodes.**
